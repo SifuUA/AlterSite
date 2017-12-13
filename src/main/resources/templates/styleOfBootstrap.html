@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <!--    автоматическая подстройка сайта под разные девайсы-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BootsTrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--Класс бренд делает надпись более красивой-->
+                <a href="#" class="navbar-brand">ALTER S</a>
+            </div>
+
+            <div>
+                <!--Класс навигация-->
+                <ul class="nav navbar-nav">
+                    <!--li - list item-->
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a> </li>
+                    <li><a href="#">Обратная связь</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--1.СТИЛИ ТЕКСТА-->
+    <div>
+        <p class="text-muted">Что то грустно</p>
+        <p class="text-primary">Тут что то важное</p>
+        <p class="text-success">Успех</p>
+        <p class="text-info">Информация</p>
+        <p class="text-warning">Внимание</p>
+        <p class="text-danger">Опасно!</p>
+
+        <!--Background color-->
+        <p class="bg-primary">Тут что то важное</p>
+        <p class="bg-success">Успех</p>
+        <p class="bg-info">Информация</p>
+        <p class="bg-warning">Внимание</p>
+        <p class="bg-danger">Опасно!</p>
+
+        <h1>Alter S</h1>
+        <h3>Alter S</h3>
+        <h5>Alter S</h5>
+
+        <p>Some text here ...<mark>it is important</mark></p>
+
+        <p class="text-left">Text left</p>
+        <p class="text-right">Text right</p>
+        <p class="text-center">Text center</p>
+        <p class="text-justify">Text равнение по обеим краям</p>
+        <p class="text-nowrap">Text без переносов</p>
+
+        <!--Если добавлен класс class="blockquote-reverse" цитата будет отображатсья справа-->
+        <blockquote class="blockquote-reverse">
+            Здесь находится цитата!
+            <footer>by Aleksey Kres </footer>
+        </blockquote>
+
+        <p class="text-uppercase">text upper case</p>
+        <p class="text-lowercase">text lowercase</p>
+        <p class="text-capitalize">text capitalize</p>
+
+        <code>for</code>, <code>while</code>, <code>switch</code>
+        <br/>
+        <br/>
+        <div class="container">
+            <pre>
+                while(i < 0) {
+                    System.out.println("Hello!");
+                    i++;
+                }
+            </pre>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+
+    <!--2.Таблицы-->
+<!--для уменьшения таблицы на моб. устройствах-->
+<div class="table-responsive">
+        <!--table-striped - чредование серого - белого
+            table-hover - выделение при наведении
+            table-bordered - границы таблицы
+            table-condensed - компактность   -->
+    <table class="table table-bordered ">
+        <thead>
+        <!--active - серый фон
+            -->
+            <tr class="active">
+                <th>Name</th>
+                <th>Telephone number</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--success - green background-->
+                <!--info - blue background-->
+                <!--danger - red background-->
+                <td class="success">Alex</td>
+                <td class="info">0935584189</td>
+                <td cl ass="danger">alekseykres@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="warning">Seva</td>
+                <td>0504521498</td>
+                <td>seva@mail.com</td>
+            </tr>
+            <tr>
+                <td>Yura</td>
+                <td>0678945612</td>
+                <td>yura@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <!--3.Кнопки-->
+<button class="btn btn-default">Standart</button>
+<input type="submit" class="btn btn-primary" value="Основная"/>
+<input type="button" class="btn btn-success" value="Подтвердить"/>
+<a href="#" class="btn btn-info" role="button">Info</a>
+<button class="btn btn-warning">Standart</button>
+<button class="btn btn-danger">Standart</button>
+<button class="btn btn-link">Link</button>
+<br/>
+<br/>
+<button class="btn btn-default btn-xs">Кнопка</button>
+<button class="btn btn-default btn-sm">Кнопка</button>
+<button class="btn btn-default btn-md">Кнопка</button>
+<button class="btn btn-default btn-lg">Кнопка</button>
+<br/>
+<br/>
+<button class="btn btn-success btn-block">Кнопка</button>
+<br/>
+<br/>
+<!--Вжатая кнопка-->
+<button class="btn btn-default btn-lg active">Button</button>
+<!--Отключенная кнопка-->
+<button class="btn btn-default btn-lg disabled">Button</button>
+<br/>
+<br/>
+<div class="btn-group btn-group-md" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="checkbox"> Параметр 1
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio"> Параметр 2
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox"> Параметр 3
+    </label>
+</div>
+<br/>
+<br/>
+
+    <!--4.Формы-->
+<div class="container">
+    <!--Если добавить class="form-inline" все расположется горизонтально-->
+    <form role="form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <!--placeholder - надпись на заднем фоне-->
+            <input type="email" class="form-control" id="email" placeholder="Введите email">
+            <p class="help-block">Какая то подсказка</p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <!--placeholder - надпись на заднем фоне-->
+            <input type="email" class="form-control" id="password" placeholder="Введите password">
+            <p class="help-block">Какая то подсказка</p>
+        </div>
+        <div class="checkbox">
+            <label for="password">
+                <input type="checkbox"> Чекбокс
+            </label>
+        </div>
+        <button class="btn btn-success">Регистрация</button>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                First element
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio2" value="option2">
+                Second element
+            </label>
+        </div>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </form>
+</div>
+<br/>
+<br/>
+
+    <!--ИКОНОЧНЫЙ ШРИФТ-->
+<i class="glyphicon glyphicon-eye-close" style="color: red; font-size: 40px"></i>
+<br/>
+<!--Адаптивная картинка img-circle -->
+<img src="https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg"
+     class="img-responsive img-thumbnail">
+<button class="btn btn-success">
+    <i class="glyphicon glyphicon-ok" style="color: yellow;"></i>
+    <span class="glyphicon glyphicon-fire" style="color: red"></span>
+    Все хорошо!
+</button>
+
+<span class="badge">57</span>
+<br/>
+<br/>
+<br/>
+
+<!--Текстовые панели-->
+<div class="container">
+    <!--Цвета меняются как обычно success, danger ...-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Заголовок
+    </div>
+    <div class="panel-body">
+        Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при оценке качества восприятия макета.
+    </div>
+    <div class="panel-footer">
+        Footer
+    </div>
+</div>
+<br/>
+<br/>
+
+<!--Выпадающее меню и списки-->
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header">Языки разметки</li>
+        <li class="disabled"><a href="#">CSS</a> </li>
+        <li><a href="#">HTML</a> </li>
+        <li><a href="#">jQuery</a> </li>
+        <!--Разделить список-->
+        <li class="divider"></li>
+        <li class="dropdown-header">Языки программирования</li>
+        <li><a href="#">Javascript</a> </li>
+    </ul>
+</div>
+<br/>
+<br/>
+
+
+    <!--JS Collapse and Modal JS-->
+<button class="btn btn-link" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+    <div class="collapse" id="hide">
+        Bla bla bla ...
+    </div>
+
+
+
+<br/>
+<br/>
+
+
+<br/>
+<br/>
+<br/>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+</html>
