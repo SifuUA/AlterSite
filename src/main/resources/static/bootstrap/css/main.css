@@ -110,3 +110,19 @@ hr {
 .w h4 {
     font-size: 25px;
 }
+
+#lg {
+    background: #ebebeb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+#lg img {
+    width: 100px;
+    height: 100px;
+}
+
+#lg h4 {
+    padding-bottom: 30px;
+    font-size: 35px;
+}
